@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    outline: 0;
+    text-decoration: none;
+    resize: none;
+}
+:root{
+    --font-leckerli: "Leckerli One", serif;
+    --font-baloo: "Baloo 2", sans-serif;
+    --font-open: "Open Sans", sans-serif;
+  
+    --logo: 400 4rem var(--font-leckerli);
+    --heading-md: 700 2.8rem var(--font-baloo);
+    --heading-sm: 700 1.8rem var(--font-baloo);
+    --body-md: 400 1.6rem var(--font-open);
+    --body-sm: 400 1.4rem var(--font-open);
+    --body-xs: 400 1.2rem var(--font-open);
+
+   /*colors*/
+
+   --brand-light: #59b2ff;
+   --brand-mid: #3487cf;
+   --brand-dark: #1d6fb6;
+   --accent-purple: #b259ff;
+   --accent-fuschia: #ff59f9;
+   --accent-pink: #ff598b;
+   --accent-orange: #ff8b59;
+   --accent-yellow: #ffcd59;
+   --accent-lime: #e1ff59;
+   --accent-green: #59ff91;
+   --accent-cyan: #59fff9;
+   --accent-navy: #6a59ff;
+   --danger: #ff5959;
+   --input-base: #1c1f21;
+   --input-stroke: #363b40;
+   --input-placeholder: #869198;
+   --shape-background: #131516;
+   --shape-body: #212427;
+   --shape-button: #2d3136;
+   --shape-hover: #383d42;
+   --text-body: #c8cdd0;
+   --text-heading: #f9f9f9;
+
+}
+
+html{
+    font-size: 62.5%; /* 1rem agora é 10px */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.flex{
+    display: flex;
+    gap: 1.6rem;
+}
+.flex1{
+    flex: 1;
+}
+
+.flex2{
+    flex: 2;
+}
+legend + label{
+    color: #ffffff;
+}

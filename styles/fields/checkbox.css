@@ -1,0 +1,48 @@
+.switch input {
+    all: unset;
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+}
+.switch{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 6.4rem;
+    height: 3.2rem;
+
+    & .slider {
+        position: absolute;
+        cursor: pointer;
+        inset: 0;
+        background-color: var(--input-base);
+        outline: 1px solid var(--input-stroke);
+        border-radius: 2.0rem;
+        transition: 0.4s;
+
+        &::before{
+            content: "";
+            position: absolute;
+            left: .4rem;
+            bottom: .4rem;
+            border-radius: 50%;
+            width: 2.4rem;
+            height: 2.4rem;
+            transition: 0.4s;
+            background: var(--input-stroke);
+        }
+
+    }
+
+}
+.switch input {
+    z-index: 2;
+}
+.switch input:checked + .slider {
+    background-color: var(--brand-light);
+}
+.switch input:checked + .slider::before {
+    transform: translateX(3.2rem);
+    background: white;
+}
+

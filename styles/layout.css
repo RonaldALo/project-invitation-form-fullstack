@@ -1,0 +1,56 @@
+#app{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    height: 100vh;
+    overflow: hidden;
+    gap: 2rem;
+    padding-block: 2rem;
+    background: var(--shape-background);
+}
+
+aside {
+    width: 40rem;
+    background: url(../assets/Background.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 1.2rem;
+    margin-left: auto;
+    
+    & .aside-container{
+        padding: 3.2rem; 
+        & img{
+            height: 4.8rem;
+        }
+        & h1{
+            font: var(--logo);
+            color: var(--accent-pink);
+            padding-block: 1.6rem .4rem;
+        }
+
+         & p{
+            font: var(--body-md);
+            font-weight: 300;
+            color: var(--text-heading);
+            
+         }
+    }
+}
+
+main{
+    overflow: auto;
+    max-width: 82rem;
+    background-color: var(--shape-body);
+    border-radius: 1.2rem;
+    & .main_container{
+       width: 56rem;
+       padding-block: 8rem;
+       margin-inline: auto;
+
+       & h2{
+        font: var(--heading-md);
+        color: var(--text-heading);
+       }
+    }
+}
+
