@@ -1,10 +1,25 @@
-.switch input {
+.change-event {
+    margin-top: 2.8rem;
+}
+
+.switch-wrapper{
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    
+    & span{
+        color: var(--text-heading);
+        font: var(--body-sm);
+    }
+}
+.switch-inner input {
     all: unset;
     position: absolute;
     inset: 0;
     cursor: pointer;
 }
-.switch{
+.switch-inner{
     position: relative;
     display: flex;
     align-items: center;
@@ -35,13 +50,13 @@
     }
 
 }
-.switch input {
+.switch-inner input {
     z-index: 2;
 }
-.switch input:checked + .slider {
+.switch-inner input:checked + .slider {
     background-color: var(--brand-light);
 }
-.switch input:checked + .slider::before {
+.switch-inner input:checked + .slider::before {
     transform: translateX(3.2rem);
     background: white;
 }

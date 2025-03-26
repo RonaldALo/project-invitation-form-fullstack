@@ -1,0 +1,36 @@
+.file-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  .custom-file{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+
+    & .fileInput{
+      display: flex;
+      align-items: center;
+      gap: .8rem;
+      color: var(--text-heading);
+      background: var(--shape-button);
+      border-radius: .8rem;
+      font: var(--body-sm);
+      font-weight: 600;
+      padding: 1.05rem 1.2rem;
+    }
+
+    & #fileName{
+      font: var(--body-sm);
+      color: var(--input-placeholder);
+    }
+    & input{
+      all: unset;
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      cursor: pointer;
+    }
+  }
+}
