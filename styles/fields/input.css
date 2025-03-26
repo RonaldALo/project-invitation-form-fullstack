@@ -1,3 +1,8 @@
+input:focus,
+textarea:focus,
+input[type="datetime-local"]:focus-within{
+    outline: 2px solid var(--brand-light);
+}
 input,textarea {
     appearance: none;
     width: 100%;
@@ -13,7 +18,10 @@ input,textarea {
         color: var(--input-placeholder);
     }
 
-
+    &:invalid{
+        border-color: var(--danger);
+        outline: none;
+    }
     &[required] + .error{
         display: flex;
         align-items: center;
@@ -22,6 +30,12 @@ input,textarea {
         font: var(--body-xs);
         color: var(--danger);
     }
+    &:not(:focus):valid + .error {
+        display: none;
+    }
+    
+
+    
 }
 
 label{
@@ -46,8 +60,4 @@ input[type="datetime-local"]{
 
 }
 
-input:focus,
-textarea:focus,
-input[type="datetime-local"]:focus-within{
-    outline: 2px solid var(--brand-light);
-}
+
