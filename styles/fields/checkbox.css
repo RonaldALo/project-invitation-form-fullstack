@@ -63,4 +63,50 @@
 
 .footer{
     border-top: 1px solid var(--input-stroke);
+
+    & .checkbox_container{
+        margin-top: 4.0rem;
+        
+        & .checkbox-wrapper{
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            position: relative;
+            margin-top: .8rem;
+            .check{
+                width: 2.0rem;
+                height: 2.0rem;
+                outline: 1px solid var(--input-stroke);
+                background: var(--input-base);
+                border-radius: .4rem;
+                margin: 0;
+                cursor: pointer;
+            }
+            input[type="checkbox"]{
+                display: none;
+            }
+            & p{
+                font: var(--body-sm);
+                color: var(--text-body);
+
+                & a {
+                    color: var(--brand-light);
+                    font-weight: 600;
+                }
+            }
+
+            & input:checked + .check{
+                outline: 1px solid var(--brand-light);
+            }
+
+            & input:checked + .check::after {
+                content: "✔";
+                color: var(--brand-light);
+                position: absolute;
+                inset: -1px 0 0 4px;
+                font-size: 1.6rem;
+              }
+
+        }
+    }
 }

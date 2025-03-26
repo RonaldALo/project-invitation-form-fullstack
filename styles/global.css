@@ -68,3 +68,6 @@ img {
 legend + label{
     color: #ffffff;
 }
+.hr{
+    border: 1px solid var(--input-stroke);
+}
