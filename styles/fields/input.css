@@ -12,6 +12,16 @@ input,textarea {
     &::placeholder{
         color: var(--input-placeholder);
     }
+
+
+    &[required] + .error{
+        display: flex;
+        align-items: center;
+        margin-top: .8rem;
+        gap: .8rem;
+        font: var(--body-xs);
+        color: var(--danger);
+    }
 }
 
 label{
